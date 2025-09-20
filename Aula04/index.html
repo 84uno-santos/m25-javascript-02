@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8" />
-    <!--<meta name="viewport" content="width=device-width, initial-scale="1.0"> -->
+    <meta charset="utf-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o CSS -->    
     <link rel="stylesheet" href="estilo.css">
     <title>Sistema de Clínica - Login</title>
+    <!-- Ícone da Página -->
+    <link rel="shortcut icon" href="img-login.png" type="image/x-icon">    
 </head>
 <body>
     <div id="quadro-login">
-        <img:src ="img-login.png" alt="Imagem de Login">
+        <img src="img-login.png" alt="Imagem de Login">
             <!--Conjunto para e-mail-->
-            <div class="form_input">
+            <div class="form-input">
                 <label for="email">Informe seu E-mail</label>
                 <input type="text" name="email" id="email" placeholder="email@exemplo.com.br">
             </div>
             <!--Conjunto para senha-->
-            <div class="form_input">
-                <label for="senha">Informe seu E-mail</label>
+            <div class="form-input">
+                <label for="senha">Informe sua Senha</label>
                 <input type="text" name="senha" id="senha" placeholder="Informar sua senha">
             </div>
             <!--Conjunto Esqueceu a senha-->
-            <div id="quadro_links">
+            <div id="quadro-links">
                 <div>
                     <label for="manter_logado">Manter-se Logado?</label>
                     <input type="checkbox" name="manter_logado" id="manter_logado">
@@ -31,7 +34,7 @@
             </div>
             <!-- Conjunto para botões -->
             <div>
-                <button class="btn_login">Login</button>
+                <button class="btn-login">Login</button>
             </div>
     </div>
 </body>

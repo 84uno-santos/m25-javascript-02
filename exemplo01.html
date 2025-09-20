@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- pt-br = Português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Garante compatibilidade com o Internet Explorer -->
+    <link rel="stylesheet" href="estilo.css"> <!-- Link para o arquivo CSS externo -->
+    <title>Meu Primeiro HTML</title>
+</head>
+<body>
+    <nav id="topo">
+        <a href="#formatacao">Formatação</a> | <a href="#listas">Listas</a> | <a href="#midias">Mídias</a> | <a href="#tabelas">Tabelas</a> | <a href="https://www.google.com" target="_blank">Google</a> <!-- Link externo que abre em nova aba -->
+    </nav>    
+    <section id="formatacao">
+        <header>
+            <h1>Formatação em HTML</h1>
+        </header>   
+            <body>
+                <h1>Título 1</h1>
+                <h2>Título 2</h2>
+                <p>
+                Lorem,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ipsum dolor sit amet consectetur adipisicing elit. Aperiam, sit ipsum maxime harum atque quo et rerum enim velit officiis aspernatur eum itaque sint optio sequi fugit id voluptas excepturi! 
+                </p>
+                <p>Segundo Parágrafo.</p>
+                <p><b>Texto em Negrito.</b></p> <!-- Tag antiga para bold -->
+                <p><strong>Texto em Negrito.</strong></p> <!-- Tag de HTML5 para bold -->
+                <p><i>Texto em Itálico.</i></p> <!-- Tag antiga para itálico -->    
+                <p><em>Texto Enfático</em></p> <!-- Tag de HTML5 para itálico -->
+                <p><strike>Texto Tachado.</strike></p>
+                <p><u>Texto Sublinhado.</u></p> <!-- Tag antiga para sublinhado -->
+                <p><ins>Texto Inserido.</ins></p> <!-- Tag de HTML5 para sublinhado -->    
+                <p><mark>Texto Marcado.</mark></p>
+            </body>     
+    </section>
+    <section id="listas">
+        <header>
+            <h2>Listas Ordenadas e Não Ordenadas</h2>
+        </header>
+        <section id="lista-ordenada">
+            <header>
+                <h3>Lista Ordenada</h3>                
+            </header>
+            <ol> <! Sem type ordem por números -->
+                <li>Primeiro Item</li>
+                <li>Segundo Item</li>
+                <li>Terceiro Item</li>
+            </ol>
+            <ol type="A"> <!-- type="A" ordem por letras maiúsculas -->
+                <li>Primeiro Item</li>
+                <li>Segundo Item</li>
+                <li>Terceiro Item</li>
+            </ol>
+            <ol type="a"> <!-- type="a" ordem por letras minúsculas -->
+                <li>Primeiro Item</li>
+                <li>Segundo Item</li>
+                <li>Terceiro Item</li>
+            </ol>
+            <ol type="I"> <!-- type="I" ordem por números romanos maiúsculos -->
+                <li>Primeiro Item</li>
+                <li>Segundo Item</li>
+                <li>Terceiro Item</li>
+            </ol>
+            <ol type="i"> <!-- type="i" ordem por números romanos minúsculos -->
+                <li>Primeiro Item</li>
+                <li>Segundo Item</li>
+                <li>Terceiro Item</li>
+            </ol>
+            <h4>Iniciando uma lista com um valor específico...</h4>
+            <ol start="5"> <!-- Inicia a lista a partir do número 5 -->
+                <li>Primeiro Item</li>
+                <li>Segundo Item</li>
+                <li>Terceiro Item</li>
+            </ol>
+        </section>
+        <section id="lista-nao-ordenada">
+            <header>
+                <h3> Lista Não Ordenada</h3>
+            </header>
+            <ul> 
+                <li>Primeiro Item</li>
+                <li>Segundo Item</li>
+                <li>Terceiro Item
+                    <ul>
+                        <li>Dentro do item 1</li>
+                        <li>Dentro do item 2</li>
+                    </ul>
+                </li>
+            </ul>   
+            <a href="#topo"> Ir para o Topo</a>
+        </section>
+    </section>
+    <section id="midias">
+        <header>
+            <h2>Imagens</h2>
+        </header>
+        <figure>
+            <img src="https://bos.org.br/wp-content/uploads/2021/10/construcao-1024x458.png" alt="Página em Construção" width="680">
+            <figcaption>Legenda</figcaption> <!-- Legenda da imagem -->
+        </figure>
+        <section id="videos">
+            <header>
+                <h3>Vídeos</h3>
+            </header>
+            <video controls>
+                <source = src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/video.mp4">
+            </video>
+        </section>
+        <section id="audios">
+            <header>
+                <h3>Áudios</h3>
+            </header>
+            <audio controls>
+                <source src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/MelhorAmigo.mp3">
+            </audio>
+        </section>
+    </section>
+    <section id="tabelas">
+        <header>
+            <h3>Tabelas</h3>
+        </header>
+        <table border=1>
+            <thead> <!-- table head Cabeçalho da tabela -->
+                <tr> <!-- table row Linha -->
+                    <th>Sequência</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>                
+            </thead>
+            <tbody> <!-- table body Corpo da tabela -->
+                <tr>
+                    <td>1</td>
+                    <td>Lapiseira</td>
+                    <td>R$ 15,00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Borracha</td>
+                    <td>R$ 2,00</td>
+                </tr>             
+                <tr>
+                    <td>3</td>
+                    <td>Caderno</td>
+                    <td>R$ 22,00</td>
+                </tr>                    
+            </tbody>
+            <tdfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td>R$ 39,00</td>
+                </tr>
+            </tdfoot>
+        </table>
+    </section> 
+    <section id="formularios">
+        <header>
+            <h3>Formulários</h3>
+        </header>
+        <!-- GET só usa não tem dados sensíveis pois aparece na URL conhecido como FatURL-->
+        <!-- POST não fica nada no link do site -->
+        <!-- action="#" indica que o formulário não será enviado para lugar nenhum -->   
+        <form action="#" method="get">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone">
+            <input type="submit" value="Enviar">
+<!--
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+            <br><br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+            <br><br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+            <br><br>
+            <label for="mensagem">Mensagem:</label>
+            <br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+            -->
+    </section>   
+</body>
+</html>
