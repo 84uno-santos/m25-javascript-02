@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="code.png"> <!-- Ícone da aba do navegador -->
+    <style>
+        nav {
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        .titulo1 {
+            color: purple;
+            font-size: larger;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h2 {
+            color: red;
+        }
+         
+        .titulo3 {
+            color: lightslategrey;
+        }
+        footer  {
+            background-color: lightgray;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+    <title>Atividade</title>
+</head>
+
+<body>
+    <main>
+        <nav id="topo">
+            <a href="#informacoes-pessoais">Informações Pessoais</a> |
+            <a href="#formacao-academica">Formação Acadêmica</a> |
+            <a href="#experiencia-profissional">Experiência Profissional</a> |
+            <a href="#hobbies">Hobbies</a> |
+            <a href="#formulario">Formulário</a> |
+        </nav>
+        <section id="informacoes-pessoais">
+            <header>
+                <h1 class="titulo1">Bruno Dos Santos</h1>
+                <img src="user_ti.png" alt="Foto de Perfil" width="150" height="150">
+            </header>
+            <ul>
+                <li>41 anos</li>
+                <li>Casado</li>
+                <li><a href="84uno.santos@gmail.com">E-mail</a></li>
+                <li>(14)99703-5084</li>
+                <li>Pederneiras/SP</li>
+            </ul>
+        </section>
+        <section id="formacao-academica">
+            <header>
+                <h2><ins>Formação Acadêmica</ins></h2>
+            </header>
+            <h3 class="titulo3">Superior Completo</h3>
+            <ul>
+                <li>2012
+                    <ul>
+                        <li><mark>FATEC-JAHU Tecnólogo em Informática com Gestão Financeira</mark></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="experiencia-profissional">
+            <header>
+                <h2><ins>Experiência Profissional</ins></h2>
+            </header>
+            <h3><em>Analista de Sistemas</em></h3>
+            <ul>
+                <li>2011 - Até o Momento
+                    <ul>
+                        <li><mark>Pedertractor Ind. e Com. Pçs. Trat. Serv. S/A.</mark></li>
+                    </ul>
+                </li>
+            </ul>
+            <h3><mark>Análise de Performance em SQL Firebird</mark></h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qJv6aSglA84?si=TqIHQbDUYU1D0sve"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section id="hobbies">
+            <header>
+                <h2><ins>Hobbies</ins></h2>
+            </header>
+            <h3>Paintball</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EMhZIdFdbUg?si=lnUlqskbiLiDmtgz"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Aviação de Caça</h3>            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bqk5kyZluVI?si=nEvkd8DRwXvRcn75"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <aside>
+            <h3><em>Bem vindo à minha página de apresentação pessoal :-)</em></h3>
+            <p>Aqui você encontrará informações sobre minha formação acadêmica, experiência profissional e hobbies.</p>
+            <p>Sinta-se à vontade para explorar e conhecer um pouco mais sobre mim!</p>                
+            <br>
+            <svg width="50" height="50" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <polygon 
+                points="
+                100,10    
+                40,190    
+                190,70    
+                10,70     
+                160,190   
+                " 
+                fill="yellow" 
+                stroke="blue" 
+                stroke-width="5"
+            />
+            </svg>
+            <a href="#topo">Clique aqui para voltar ao topo do site!</a>
+        </aside>        
+        <section id="formulario">
+            <header>
+                <h3>Contato</h3>
+                <form action="#" method="get">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                    <br><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email">
+                    <br><br>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite aqui sua mensagem..."></textarea>
+                    <br><br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                    <input type="button" value="Ir para o Topo" onclick="window.scrollTo(0,0)" </form>
+            </header>
+        </section>
+        <footer id="rodape">
+            <p>Bruno Dos Santos <a href="www.linkedin.com/in/84unosantos">Linkedin</a> - 2025.09.27 SENAI Curso de Java Script - &copy;</p>
+    </main>
+</body>
+
+</html>

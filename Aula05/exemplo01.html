@@ -1,36 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br"> <!-- pt-br = Português do Brasil -->
+
 <head>
     <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para dispositivos móveis -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Garante compatibilidade com o Internet Explorer -->
-    <link rel="stylesheet" href="estilo.css"> <!-- Link para o arquivo CSS externo -->
-    <title>Meu Primeiro HTML</title>
+    <!-- <link rel="stylesheet" href="estilo.css"> --> <!-- Link para o arquivo CSS externo -->
+    <!-- stryle é CSS dentro do HTML -->   
+    <style>
+        nav {
+            background-color: aqua;
+        }
+        /* Estilo por ID no caso #videos */
+        #videos video{ 
+            width: 800px;
+        }
+        /* Estilo por Classe no caso cabeçalho onde eu declarei o class */
+        .cor-vermelha {
+            color: red;
+        }
+        /* Estilos CSS internos */
+        /*
+         * Comentário em CSS
+         * Pode ser usado para documentar o código
+         */
+        /*
+         body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        */        
+    </style>
 </head>
+
 <body>
     <nav id="topo">
-        <a href="#formatacao">Formatação</a> | <a href="#listas">Listas</a> | <a href="#midias">Mídias</a> | <a href="#tabelas">Tabelas</a> | <a href="https://www.google.com" target="_blank">Google</a> <!-- Link externo que abre em nova aba -->
-    </nav>    
+        <a href="#formatacao">Formatação</a> | <a href="#listas">Listas</a> | <a href="#midias">Mídias</a> | <a
+            href="#tabelas">Tabelas</a> | <a href="https://www.google.com" target="_blank">Google</a> | <a
+            href="#iframes">Frames</a> | <a href="#desenho">Desenho</a> <!-- Link externo que abre em nova aba -->
+    </nav>
     <section id="formatacao">
         <header>
             <h1>Formatação em HTML</h1>
-        </header>   
-            <body>
-                <h1>Título 1</h1>
-                <h2>Título 2</h2>
-                <p>
-                Lorem,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ipsum dolor sit amet consectetur adipisicing elit. Aperiam, sit ipsum maxime harum atque quo et rerum enim velit officiis aspernatur eum itaque sint optio sequi fugit id voluptas excepturi! 
-                </p>
-                <p>Segundo Parágrafo.</p>
-                <p><b>Texto em Negrito.</b></p> <!-- Tag antiga para bold -->
-                <p><strong>Texto em Negrito.</strong></p> <!-- Tag de HTML5 para bold -->
-                <p><i>Texto em Itálico.</i></p> <!-- Tag antiga para itálico -->    
-                <p><em>Texto Enfático</em></p> <!-- Tag de HTML5 para itálico -->
-                <p><strike>Texto Tachado.</strike></p>
-                <p><u>Texto Sublinhado.</u></p> <!-- Tag antiga para sublinhado -->
-                <p><ins>Texto Inserido.</ins></p> <!-- Tag de HTML5 para sublinhado -->    
-                <p><mark>Texto Marcado.</mark></p>
-            </body>     
+        </header>
+
+        <body>
+            <h1>Título 1</h1>
+            <h2>Título 2</h2>
+            <p>
+                Lorem,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ipsum dolor sit amet
+                consectetur adipisicing elit. Aperiam, sit ipsum maxime harum atque quo et rerum enim velit officiis
+                aspernatur eum itaque sint optio sequi fugit id voluptas excepturi!
+            </p>
+            <p>Segundo Parágrafo.</p>
+            <p><b>Texto em Negrito.</b></p> <!-- Tag antiga para bold -->
+            <p><strong>Texto em Negrito.</strong></p> <!-- Tag de HTML5 para bold -->
+            <p><i>Texto em Itálico.</i></p> <!-- Tag antiga para itálico -->
+            <p><em>Texto Enfático</em></p> <!-- Tag de HTML5 para itálico -->
+            <p><strike>Texto Tachado.</strike></p>
+            <p><u>Texto Sublinhado.</u></p> <!-- Tag antiga para sublinhado -->
+            <p><ins>Texto Inserido.</ins></p> <!-- Tag de HTML5 para sublinhado -->
+            <p><mark>Texto Marcado.</mark></p>
+        </body>
     </section>
     <section id="listas">
         <header>
@@ -38,9 +93,9 @@
         </header>
         <section id="lista-ordenada">
             <header>
-                <h3>Lista Ordenada</h3>                
+                <h3>Lista Ordenada</h3>
             </header>
-            <ol> <! Sem type ordem por números -->
+            <ol> <!-- Sem type ordem por números -->
                 <li>Primeiro Item</li>
                 <li>Segundo Item</li>
                 <li>Terceiro Item</li>
@@ -76,7 +131,7 @@
             <header>
                 <h3> Lista Não Ordenada</h3>
             </header>
-            <ul> 
+            <ul>
                 <li>Primeiro Item</li>
                 <li>Segundo Item</li>
                 <li>Terceiro Item
@@ -85,16 +140,17 @@
                         <li>Dentro do item 2</li>
                     </ul>
                 </li>
-            </ul>   
+            </ul>
             <a href="#topo"> Ir para o Topo</a>
         </section>
     </section>
     <section id="midias">
         <header>
-            <h2>Imagens</h2>
+            <h2 class="cor-vermelha">Imagens</h2>
         </header>
         <figure>
-            <img src="https://bos.org.br/wp-content/uploads/2021/10/construcao-1024x458.png" alt="Página em Construção" width="680">
+            <img src="https://bos.org.br/wp-content/uploads/2021/10/construcao-1024x458.png" alt="Página em Construção"
+                width="680">
             <figcaption>Legenda</figcaption> <!-- Legenda da imagem -->
         </figure>
         <section id="videos">
@@ -102,7 +158,7 @@
                 <h3>Vídeos</h3>
             </header>
             <video controls>
-                <source = src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/video.mp4">
+                <source=src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/video.mp4">
             </video>
         </section>
         <section id="audios">
@@ -110,7 +166,8 @@
                 <h3>Áudios</h3>
             </header>
             <audio controls>
-                <source src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/MelhorAmigo.mp3">
+                <source
+                    src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/MelhorAmigo.mp3">
             </audio>
         </section>
     </section>
@@ -124,7 +181,7 @@
                     <th>Sequência</th>
                     <th>Descrição</th>
                     <th>Valor</th>
-                </tr>                
+                </tr>
             </thead>
             <tbody> <!-- table body Corpo da tabela -->
                 <tr>
@@ -136,12 +193,12 @@
                     <td>2</td>
                     <td>Borracha</td>
                     <td>R$ 2,00</td>
-                </tr>             
+                </tr>
                 <tr>
                     <td>3</td>
                     <td>Caderno</td>
                     <td>R$ 22,00</td>
-                </tr>                    
+                </tr>
             </tbody>
             <tdfoot>
                 <tr>
@@ -150,21 +207,21 @@
                 </tr>
             </tdfoot>
         </table>
-    </section> 
+    </section>
     <section id="formularios">
         <header>
             <h3>Formulários</h3>
         </header>
         <!-- GET só usa não tem dados sensíveis pois aparece na URL conhecido como FatURL-->
         <!-- POST não fica nada no link do site -->
-        <!-- action="#" indica que o formulário não será enviado para lugar nenhum -->   
+        <!-- action="#" indica que o formulário não será enviado para lugar nenhum -->
         <form action="#" method="get">
             <label for="nome">Nome:</label>
             <input type="text" name="nome" id="nome">
             <label for="telefone">Telefone:</label>
             <input type="tel" name="telefone" id="telefone">
             <input type="submit" value="Enviar">
-<!--
+            <!--
             <label for="nome">Nome:</label>
             <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
             <br><br>
@@ -182,6 +239,44 @@
             <input type="reset" value="Limpar">
 
             -->
-    </section>   
+    </section>
+    <section id="iframes">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YL_MI71CGu8?si=vavSpjzpxvikAUQl"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <section id="desenho">
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" fill="red" />
+        </svg>
+    </section>
+    <section id="tag">
+        <progress value="70" max="100"></progress>
+        <meter value="0.6">60%</meter>
+        <time datetime="2025-09-27">27 de Setembro de 2025</time>
+        <!-- Mostra Código em linha corrida -->
+        <code>console.log("Olá");</code> 
+        <br>
+        <!-- Mostra Código mantendo formatação do código -->
+        <pre> 
+        for i in range(5):
+        print(i)
+        </pre>
+    </section>
+    <aside>
+        <h3>Barra Lateral</h3>
+        <p>Conteúdo adicional ou links relacionados podem ser colocados aqui.</p>   
+    </aside>
+    <footer>
+        <p>Rodapé do Documento - &copy; 2025</p>
+    </footer>    
+    <!-- Javascript sempre ficará no final do código HTML -->
+    <script>
+        alert("Página Recarregada!")
+        //  alert("Olá Mundo!") // Exibe uma caixa de alerta com a mensagem "Olá Mundo!"
+        // console.log("Olá Mundo!") // Exibe a mensagem "Olá Mundo!" no console do navegador
+        // document.write("Olá Mundo!") // Escreve a mensagem "Olá Mundo!" diretamente na página web
+    </script>
 </body>
 </html>

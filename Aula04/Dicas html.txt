@@ -1,0 +1,50 @@
+vs code atalho criar estrutura básica html 
+	é só digitar ! + ENTER
+
+# = ID
+. = Classe
+
+ALT + Seta p/baixo ou cima = mover linha para cima ou para baixo
+
+identar
+SHIFT + ALT + F
+
+comentário <!-- atalho é -->
+CTRL + ;
+
+para verificar o envio de dados no html 
+	use F12 no navegador
+	Pesquise pela aba Network
+	Pesquise pela aba Payload
+
+
+Estrutura
+
+
+<body>
+    <main> conteúdo principal </main>
+    <section> seção de conteúdo </section>
+        <header> cabeçalho da seção </header>
+        <article> artigo </article>      
+    <header>
+	    <article>	
+	    <header>
+        <article>	
+	    <header>    
+    <section>
+    <header> cabeçalho        
+<aside> barra lateral
+<footer> rodapé
+
+<canvas> só javascript desenha
+
+<svg> html de desenho
+
+<!-- Site para desenhar em svg -->
+https://inkscape.org/
+
+<script> // para colocar código javascript dentro do html
+
+<template> criação de componente
+
+<noscript> texto que será mostrado caso o navegador não tenha suporte a java script
