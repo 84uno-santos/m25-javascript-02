@@ -1,0 +1,50 @@
+# config padrão na 1º inicialização
+
+# inicializando o git na pasta local e voltando para master/main
+git init
+
+# inicializando conta de acesso
+git config --global user.name "nome usuario"
+git config --global user.email "email@correio.com.br"
+
+# configurando editor padrão de vim para VScode
+git config --global core.editor "code -- wait"
+
+# configurando gerenciador de conflitos VScode
+git config --global merge.tool vscode
+git config --global mergetool.vscode.cmd "code --wait --merge \$REMOTE \$BASE \$LOCAL \$MERGED"
+
+# Não gerar arquivos de log do merge
+git config --global mergetool.keepbackup false
+
+# Mostrar alterações a ser aplicada
+git status 
+
+# adicionando versão
+git add .
+
+# empacotando alterações do repositório local
+git commit -m "Detalhe aqui as alterações aplicadas"
+
+# linkando repositório da nuvem
+git remote add origin https://github.com/---------.git
+
+# removendo link 
+git remote remove origin
+
+# Importando repositório da nuvem para local, quando pasta local está vazia
+git clone 
+
+# importando da nuvem
+git pull origin master
+
+# enviando para nuvem
+git push origin master
+
+# para ver vínculo com a nuvem 
+git remote -v
+
+# resolvendo conflitos
+git mergetool
+
+

@@ -1,0 +1,60 @@
+Briefing de Software
+
+1. Nome do Projeto
+AgendaSys – Sistema de Agendamento para Clínica Médica
+
+2. Objetivo do Sistema
+Desenvolver um sistema web que permite o agendamento online de uma clínica médica.
+
+3. Público-Alvo
+• Pacientes (Cadastro, Agendamento, Consultar, Cancelamento, Pagamento, confirmar presença)
+• Médicos (Cadastro, Re-agendar Consulta, Cadastrar Disponibilidade de atendimento, Reserva de Sala)
+• Atendentes (Consultar agenda, Cadastro (médico, atendente, convênio), Agendamento, confirmar presença, confirmar pagamento)
+
+4. Necessidades Funcionais
+• cadastrar uma consulta, cancelar uma consulta
+• escolher o médico da consulta
+• agendar data e hora da consulta 
+• local onde a consulta acontecera 
+• Login com perfis diferenciados (paciente, atendentes, médicos)
+• Relatório de consultas realizadas na semana
+• Dashboard com médicos, quantidade de pacientes, número de pacientes que retornaram, e tempo de atendimento
+
+
+5. Necessidades Não Funcionais
+• Interface amigável e acessível
+• Tempo de resposta inferior a 2 segundos por ação
+• Suporte para múltiplos usuários simultâneos
+• Backup automático diário
+
+6. Regras de Negócio
+• Paciente não pode fazer mais de 1 agendamento na mesma data e hora
+• Paciente não pode cancelar agendamento com menos de 24hrs
+• Paciente não pode consultar/alterar/cancelar agendamento de outros Pacientes
+• A Atendente pode consultar/alterar/cancelar o agendamento de qualquer paciente, sem restrições, com aprovação do médico do agendamento
+• o paciente não poderá agendar uma consulta com menos de 1 hora 
+• Médico pode consultar agendamentos de todos os pacientes que estão atribuídos a ele
+• Paciente não poderá agendar fora do expediente médico
+• Para atendimentos de urgência tem um adicional de 30% no valor da consulta
+• Agendamento sem convênio somente é confirmado após a confirmação do pagamento
+• O Médico pode remarcar as consultas com no mínimo 24 horas de antecedência
+• O cadastro de Médico deve permitir o cadastro de mais de uma especialidade médica
+• O Médico pode atender mais de 1 convênio e o valor da consulta pode ser diferente para cada um deles.
+
+7. Funcionalidades Prioritárias (MVP)
+• gestão eficiente de agendamentos
+• tela de atendimento ao paciente
+• Login de paciente/atendente/médico 
+• garantia de atendimento prioritário e acessível a grupos vulneráveis 
+• segurança dos dados dos pacientes
+
+8. Estilo Visual Desejado
+• Interface moderna e responsiva
+• Cores neutras (tons de verde, branco e cinza)
+• Ícones intuitivos para facilitar a navegação
+
+9. Prazos e Entregas
+• Prototipação: 2 semana
+• MVP: 4 semanas
+• Versão com relatórios e refinamentos: 8 semanas
+

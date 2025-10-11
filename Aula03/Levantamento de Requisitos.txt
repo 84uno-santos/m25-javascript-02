@@ -1,0 +1,78 @@
+Briefing 
+
+Objetivo:
+
+Esboço visual desejado
+
+Levantamento de Requisitos:
+
+Requisitos Funcionais (Funcionalidades que o Sistemas terá)
+
+Requisitos Não Funcionais (Qualidades do Sistema, desempenho, plataforma)
+
+Regras de Negócio (Exigências e Restrições do Sistema)
+
+Fluxograma e Diagrama de Navegação (Como o usuário deve percorrer o sistema)
+
+Wireframes (Esboço visual das telas)
+
+Documentação técnica (Instruções de Instalação, API, infraestrutura)
+
+Estrutura 
+Menus / Submenu
+Páginas
+Rótulos, Títulos 
+
+/ ---------------------------------------------------------------------------------------- /
+Exemplo de Briefing de Software
+
+1. Nome do Projeto
+BiblioSys – Sistema de Gerenciamento de Biblioteca Escolar
+
+2. Objetivo do Sistema
+Desenvolver um sistema web que permita o gerenciamento completo de uma biblioteca
+escolar. O sistema permitirá o cadastro de livros, controle de empréstimos, devoluções,
+multas e relatórios de uso.
+
+3. Público-Alvo
+• Alunos da escola (empréstimo e consulta de acervo)
+• Bibliotecários (controle do acervo e transações)
+• Coordenação pedagógica (acesso a relatórios)
+
+4. Necessidades Funcionais
+• Cadastro de livros com título, autor, gênero, editora e número de exemplares
+• Empréstimo e devolução de livros com registro de datas
+• Cálculo automático de multas por atraso
+• Relatórios de livros mais emprestados e inadimplência
+• Login com perfis diferenciados (aluno, bibliotecário, coordenação)
+
+5. Necessidades Não Funcionais
+• Interface amigável e acessível
+• Suporte para múltiplos usuários simultâneos
+• Tempo de resposta inferior a 2 segundos por ação
+• Backup automático diário
+
+6. Regras de Negócio
+• Alunos podem pegar no máximo 3 livros por vez
+
+• O prazo de empréstimo é de 7 dias úteis, renovável por mais 7 dias
+• Multas são aplicadas em R$1 por dia de atraso
+• Livros com apenas um exemplar não podem ser renovados
+
+7. Funcionalidades Prioritárias (MVP)
+• Cadastro de livros
+• Empréstimo e devolução
+• Login de bibliotecário
+• Visualização de acervo pelos alunos
+• Registro de inadimplência
+
+8. Estilo Visual Desejado
+• Interface moderna e responsiva
+• Cores neutras (tons de azul, branco e cinza)
+• Ícones intuitivos para facilitar a navegação
+
+9. Prazos e Entregas
+• Prototipação: 1 semana
+• MVP: 2 semanas
+• Versão com relatórios e refinamentos: 4 semanas
+
