@@ -48,3 +48,23 @@ https://inkscape.org/
 <template> criação de componente
 
 <noscript> texto que será mostrado caso o navegador não tenha suporte a java script
+
+ctrl + espaço = mostra arquivos que estão na mesma pasta 
+
+CSS
+
+padding espaçamento interno
+margin espaçamento externo
+
+organizar o CSS
+1º *
+2º tag
+3º id
+4º classe
+
+CSS respeita hierarquia, ordem do que está dentro do arquivo, ele vai aplicando em todos os componentes na ordem que está no código...
+
+padding: 0 10px (topo-base esquerda-direita)
+padding: 10 0 10 0 (esquerda topo direita base)
+irmão geral ~ aplica a todos
+irmão imediato + (utilizar depois do irmão geral)

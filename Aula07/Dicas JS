@@ -1,0 +1,12 @@
+// case sensitive
+/* comentário trecho */ 
+// comentário linha
+let // variável
+const // constante
+var // variável (não usar mais)
+console.log // imprimir no console
+alert // abre janela de alerta
+prompt // abre janela pra entrada do usuário
+
+no html é boa prática colocar o script no final do body
+<script src="script.js"></script>
