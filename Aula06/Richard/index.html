@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do CSS</title>
+    <style>
+        /* Estilo para tudo no meu html */
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Selecionando somente um elemento com base na tag dele */
+        p {
+            font-size: medium;
+            color: blue; 
+        }
+        /* Configuração especial para o parágrafo que está na secao-02 mas
+        é filho direto */
+        #secao-02 > p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="uso-comum">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis molestiae voluptatibus iure tempore culpa eligendi libero totam exercitationem? Quisquam asperiores nemo quaerat animi neque distinctio? Accusamus nostrum architecto voluptatibus enim!
+            </p>
+        </section>
+        <section id="secao-02">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates placeat at cupiditate possimus delectus eveniet quos quisquam voluptatibus consequuntur a accusamus sequi, quam magnam sunt ducimus animi nam? Quisquam, aliquam.
+            </p>
+            <section>
+                <p>
+                    teste
+                </p>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
