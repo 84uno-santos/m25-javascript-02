@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Formulário — Nome e Idade</title>
+<!--
+<style>
+body {font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; display:flex;align-items:center;justify-content:center;height:100vh;background:#f7fafc;margin:0}
+.card {background:white;padding:20px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08);width:320px}
+label{display:block;margin-bottom:6px;font-weight:600}
+input{width:100%;padding:8px 10px;border:1px solid #d1d5db;border-radius:6px;margin-bottom:12px}
+button{width:100%;padding:10px;border:0;border-radius:8px;background:#2563eb;color:white;font-weight:700;cursor:pointer}
+button:active{transform:translateY(1px)}
+</style>
+-->
+</head>
+<body>
+<main class="formulario">
+<h1>Formulário — Nome e Idade</h1>
+
+<form id="personForm">
+<label for="nome">Nome</label>
+<input id="nome" name="nome" type="text" placeholder="Seu nome"/>
+
+<label for="idade">Idade</label>
+<input id="idade" name="idade" type="number" min="0" placeholder="Sua idade"/>
+
+<button type="enviar">Enviar</button>
+</form>
+</main>
+
+<script>
+    let nome =!nome;
+    let idade =!idade;
+    console.log("Olá " + !nome + "Sua idade é  " + !idade);
+    alert("Bem vindo ao Senai - Bauru!!!");
+</script>
+</body>
+</html>
