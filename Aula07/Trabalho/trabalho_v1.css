@@ -78,7 +78,7 @@ h3 {
 h1 + p {
     color: darkblue;
     text-align: center;
-    word-break: 
+    word-break: break-all; // Adiciona quebra de linha automática
 }
 
 h3 + p {
