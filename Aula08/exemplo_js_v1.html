@@ -1,0 +1,29 @@
+<!-- a mesma coisa que exemplo_s_v0.html de cima porém com script dentro do onclick -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" name="nome" id="nome">
+        <input type="number" name="idade" id="idade">
+        <!-- <button type="button" onclick="console.log('fui clicado');"> -->              
+        <button type="button"             
+            onclick="let nome='Bruno'; let idade='41'; console.log(nome + ' tem ' + idade  + ' anos de idade'); alert('Verifique o console usando F12')">          
+            Click-me
+        </button>
+    </form>    
+    <!--
+    <script>
+        let nome = "Bruno";
+        let idade = 41;
+        console.log("Olá " + nome + " tudo bem com você?");
+        console.log("Você nasceu em " + (2025 - idade));
+        alert("Bem vindo ao Senai - Bauru!!!");
+    </script>    
+    -->
+</body>
+</html>
