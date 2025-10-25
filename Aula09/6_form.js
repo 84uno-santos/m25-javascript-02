@@ -15,8 +15,7 @@ const form = document.querySelector("#id_form");
 form.addEventListener('submit', function(event){
     //console.log("Evento form!");
     //console.log(validar_envio());  
-    event.preventDefault(); // bloqueia o envio do form 
-    return validar_envio();
+    //event.preventDefault(); // bloqueia o envio do form 
+    if (!validar_envio()) event.preventDefault();  
+    //  else return validar_envio();
 });
-
-// evento de clicar no botão submit
