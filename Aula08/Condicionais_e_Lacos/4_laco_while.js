@@ -11,7 +11,7 @@ while (i <= 20) {
     i+=2; // incrementa i em 2
 }
 console.log("Fim do WHILE");    
-
+/* Ver 5_laco_do_while.js
 // Usando While no Final do..while
 // Primeiro executa o bloco, depois verifica a condição
 i = 0;
@@ -19,3 +19,4 @@ do{
     console.log("Valor de i = " + i++);
 } while (i <= 10);
 console.log("Fim do DO..WHILE");   
+*/

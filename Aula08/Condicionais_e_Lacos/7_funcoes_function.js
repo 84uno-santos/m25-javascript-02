@@ -1,5 +1,5 @@
 /** 
- * Criação de funções em JavaScript
+ * Criação de function em JavaScript
  */
 
 function fatorial(numero) {
