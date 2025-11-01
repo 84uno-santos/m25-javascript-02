@@ -1,4 +1,4 @@
-/** 
+/**
  * JS Responsável pelo cadastro
  */
 
@@ -7,35 +7,32 @@ const maior_id = () => {
     /* importando biblioteca axios usando a página de cadastro.html*/
     //const axios = require('axios').default
     return axios.get('http://localhost:3000/produtos').then((ret)=>{
-        //return ret.data.reduce((a,b) => (a > b?.id ? a : b?.id),0)
-    // Mapeia todos os IDs para um array de números, ignora null/undefined, e encontra o máximo.
-        const ids = ret.data.map(item => item.id).filter(id => typeof id === 'number');
-        return ids.length > 0 ? Math.max(...ids) : 0;    
+        return ret.data.reduce((a,b) => (a > b?.id ? a : b?.id),0)
     })
 }
 
 const gravar = () => {
 /* importando biblioteca axios usando a página de cadastro.html*/
-    //const axios = require('axios').default; 
+    //const axios = require('axios').default;
 /* buscando dos dados da página html */
-    const id = document.querySelector('#id').value; //.ariaValueMax;
+    const id = document.querySelector('#id').ariaValueMax;
     const descricao = document.querySelector('#iddesc').value;
     const saldo = document.querySelector('#idsaldo').value;    
     const preco = document.querySelector('#idpreco').value;
-// Montando o JSON para gravar 
+// Montando o JSON para gravar
     maior_id().then((ret)=>{
     const dados = {
-        "id": (id == "null" ? maior_id(ret)+1 : id),
+        "id": (id == "null" ? ret + 1 : id),
         "descricao": descricao,
         "saldo": saldo,
         "preco": preco
     }
     if (id == "null") {
-        axios.post("http://localhost:3000/produtos", dados)
+        axios.post("http://locahost:3000/produtos", dados)
         .then((ret)=>console.log("Produto Cadastrado com Sucesso"))
     } else {
-         axios.put("http://localhost:3000/produtos/"+id, dados)     
-        //axios.put(`http://localhost:3000/produtos/${id}`, dados)  // Também pode ser dessa forma    
+         axios.put("http://locahost:3000/produtos/"+id, dados)    
+        //axios.put(`http://locahost:3000/produtos/${id}`, dados)  // Também pode ser dessa forma    
         .then((ret)=>console.log("Produto Alterado com Sucesso"))
     }
     })
@@ -48,18 +45,18 @@ const gravar = () => {
         "preco": preco
     }
     if (id == "null") {
-        axios.post("http://localhost:3000/produtos", dados)
+        axios.post("http://locahost:3000/produtos", dados)
         .then((ret)=>console.log("Produto Cadastrado com Sucesso"))
     } else {
-         axios.put("http://localhost:3000/produtos/"+id, dados)     
-        //axios.put(`http://localhost:3000/produtos/${id}`, dados)  // Também pode ser dessa forma    
+         axios.put("http://locahost:3000/produtos/"+id, dados)    
+        //axios.put(`http://locahost:3000/produtos/${id}`, dados)  // Também pode ser dessa forma    
         .then((ret)=>console.log("Produto Alterado com Sucesso"))
-    }   
+    }  
 }
 
 // Colocando os eventos no formulário
 // document.querySelector(#Gravar).onclick = gravar; // poderia ser pelo id do botão
-const form = document.querySelector('form'); // pega o 1º formulário da página
+document.querySelector('form'); // pega o 1º formulário da página
 form.addEventListener('submit', function (e){
 // tirar a submissão do form
     e.preventDefault();
