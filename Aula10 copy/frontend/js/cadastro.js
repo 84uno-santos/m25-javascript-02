@@ -27,6 +27,10 @@ const maior_id = () => {
 
 /* Gravando o que estava nos campos */
 const gravar = () => {
+    /* inibindo o botão de gravar e reset para o usuário não clicar enquanto grava */
+    document.getElementById('btnSubmit').disabled = true; /* desabilita o botão gravar */
+    document.getElementById('btnReset').disabled = true; /* desabilita o botão reset */
+    document.getElementById("modal-gravando").classList.add("show"); /* mostrando a modal de gravação */
     /* importando biblioteca axios usando a página de cadastro.html*/
     //const axios = require('axios').default; 
     /* buscando dos dados da página html */
@@ -40,7 +44,7 @@ const gravar = () => {
     maior_id().then((maiorIdAtual)=>{
         const dados = {
             // CORREÇÃO 1: Usa maiorIdAtual para calcular o novo ID
-            "id": (id == "null" ? maiorIdAtual + 1 : parseInt(id)),
+            "id": ""+(id == "null" ? parseInt(maiorIdAtual) + 1 : parseInt(id)),  // pesquisando como número, mas gravando como string quand coloco ""+
             "descricao": descricao,
             "saldo": saldo,
             "preco": preco

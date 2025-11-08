@@ -27,7 +27,7 @@ const carrega = () => {
                 td_saldo.textContent = item.saldo;
                 td_preco.textContent = item.preco;
                 td_acoes.innerHTML = `<a href="cadastro.html?id=${item.id}"><img src="images/edit.svg" class="img-edit"> </a>
-                                   | <img src="images/delete.svg" class="img-delete">`;
+                                    |<img src="images/delete.svg" class="img-delete" onclick="apagar(${item.id})">`;
                                    // + `<ahref="cadastro.html?id=${item.id}"><img src="images/delete.svg" class="img-delete"> </a>` // poderia ser assi tmb
                 /*
                 td_id.innerText = item.id;
@@ -39,6 +39,19 @@ const carrega = () => {
 
         })
 
+}
+
+const apagar = async (id) => {
+    const op = confirm("Deseja mesmo excluir o registro "+id+"?");
+    if (op) {
+        await axios.delete("http://localhost:3000/produtos/" + id);
+        alert("Registro "+id+" excluído com sucesso!");
+        // Recarregar a página
+        window.location.reload();
+    } else {
+        alert("Operação de exclusão cancelada pelo usuário.");
+        console.log("Exclusão cancelada");
+    }
 }
 
 carrega();
