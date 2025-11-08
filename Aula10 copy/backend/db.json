@@ -1,0 +1,22 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "descricao": "teste",
+      "saldo": 12,
+      "preco": 33.44
+    },
+    {
+      "id": 2,
+      "descricao": "ntoento",
+      "saldo": 322,
+      "preco": 12.12
+    },
+    {
+      "id": 3,
+      "descricao": "tbtbdbd",
+      "saldo": 22,
+      "preco": 12.43
+    }
+  ]
+}
