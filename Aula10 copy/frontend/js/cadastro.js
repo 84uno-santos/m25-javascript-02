@@ -3,16 +3,29 @@
 
 /* criando função para pegar o maior id */
 const maior_id = () => {
-    /* importando biblioteca axios usando a página de cadastro.html*/
-    //const axios = require('axios').default
-    return axios.get('http://localhost:3000/produtos').then((ret)=>{
-        // Mapeia todos os IDs para um array de números, ignora null/undefined, e encontra o máximo.
-        const ids = ret.data.map(item => item.id).filter(id => typeof id === 'number');
-        // Se houver IDs válidos, retorna o máximo, caso contrário, retorna 0.
-        return ids.length > 0 ? Math.max(...ids) : 0;     
-    })
+    // Retorna uma Promise que resolve para o maior id numérico encontrado em /produtos
+    return axios.get('http://localhost:3000/produtos')
+        /*return ret.data.reduce((a,b) => (a > b?.id ? a : b?.id),0)*/
+    .then((ret) => {
+            const produtos = Array.isArray(ret.data) ? ret.data : [];
+            const ids = produtos
+                // Mapeia para obter apenas o valor do 'id'
+                .map(item => item && item.id)
+                // FILTRA: Verifica se o ID, após ser convertido para Número,
+                // é um número finito (descarta strings não-numéricas, nulls, etc.)
+                .filter(id => Number.isFinite(Number(id)))
+                // MAP: Converte explicitamente os IDs válidos para o tipo Número
+                .map(id => Number(id));
+            // Retorna o maior número da lista, ou 0 se a lista estiver vazia
+            return ids.length > 0 ? Math.max(...ids) : 0;
+        })
+        .catch((err) => {
+            console.error('Erro ao obter produtos para calcular maior id:', err);
+            return 0;
+        });        
 }
 
+/* Gravando o que estava nos campos */
 const gravar = () => {
     /* importando biblioteca axios usando a página de cadastro.html*/
     //const axios = require('axios').default; 
@@ -47,6 +60,19 @@ const gravar = () => {
     // CORREÇÃO 2: O BLOCO REPETIDO FOI REMOVIDO!
 }
 
+/* carregando os dados do produto para edição */
+const carregar = async () => {
+    const parametros = new URLSearchParams(window.location.search);
+    const id = parametros.get("id");
+    if (id) {
+        document.getElementById("id").value = id;   // poderia usar document.querySelector('#id').value mas teria que usar #
+        const res = await axios.get("http://localhost:3000/produtos/" + id); // fake api 
+        document.getElementById("iddesc").value = res.data.descricao;
+        document.getElementById("idsaldo").value = res.data.saldo;
+        document.getElementById("idpreco").value = res.data.preco;
+    }
+}
+
 // Colocando os eventos no formulário
 // document.querySelector(#Gravar).onclick = gravar; // poderia ser pelo id do botão
 const form = document.querySelector('form'); // pega o 1º formulário da página
@@ -59,4 +85,9 @@ form.addEventListener('submit', function (e){
     setTimeout(() => {
         window.location.href = "index.html";
     }, 3000); // 3 segundos
+})
+
+// colocando um evento de carregamento da página
+document.addEventListener("DOMContentLoaded", function () {
+    carregar();
 })

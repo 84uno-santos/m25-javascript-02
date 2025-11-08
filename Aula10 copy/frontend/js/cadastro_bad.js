@@ -15,14 +15,14 @@ const gravar = () => {
 /* importando biblioteca axios usando a página de cadastro.html*/
     //const axios = require('axios').default;
 /* buscando dos dados da página html */
-    const id = document.querySelector('#id').ariaValueMax;
+    const id = document.querySelector('#id').value;
     const descricao = document.querySelector('#iddesc').value;
-    const saldo = document.querySelector('#idsaldo').value;    
-    const preco = document.querySelector('#idpreco').value;
+    const saldo = parseInt(document.querySelector('#idsaldo').value);    
+    const preco = parseFloat(document.querySelector('#idpreco').value);
 // Montando o JSON para gravar
     maior_id().then((ret)=>{
     const dados = {
-        "id": (id == "null" ? ret + 1 : id),
+        "id": (id == "null" ? ret + 1 : +id),  // o + força a conversão para número ou parseInt(id)
         "descricao": descricao,
         "saldo": saldo,
         "preco": preco

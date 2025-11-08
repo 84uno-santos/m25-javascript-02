@@ -3,7 +3,7 @@
 *01 de nov. 2025*
 
 **Simulador de banco de dados**
-1. No Terminal com o arquvio db.json marcado digite
+1. No Terminal com o arquivo db.json marcado digite
 npm ini -y
 
 2. Ignorando pacotes para não "subir" para o github
@@ -12,7 +12,6 @@ npx gitigonre node
 
 3. Em caso de erro crie a pasta que está faltando, abaixo comando de exemplo
 mkdir c:\Users\Aluno\AppData\Roaming\npm
-
     
 4. Instalando servidor json nessa pasta
 npm install json-server
@@ -23,7 +22,3 @@ npm install json-server
 
 6. No terminal digite o comando abaixo para iniciar o node.js
 npm start
-
-
-
-
