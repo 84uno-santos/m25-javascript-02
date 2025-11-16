@@ -1,6 +1,8 @@
 # Referências Rápidas de Markdown
 
-## "Comentários" Citações em Bloco (Blockquotes)	Use > antes do texto da citação
+## "Comentários" Citações em Bloco (Blockquotes)
+Use > antes do texto da citação podendo usar >> para níveis adicionais
+
 > Primeiro parágrafo da citação.
 >
 > Segundo parágrafo da citação.
@@ -17,7 +19,8 @@ Use 3 ou mais hífens (---), asteriscos (***) ou underscores (___)	---
 ***
 ___
 
-## Para Título utilize # com limite até 6 níveis
+## Títulos
+Para Título utilize # com limite até 6 níveis
 # Título Principal (H1)
 ## Subtítulo (H2)
 ### Título de Seção (H3)
@@ -26,27 +29,34 @@ ___
 ###### Título Menor (H6)
 
 ## ***Ênfase***
-*Itálico*	use * ou _ antes e depois da palavra
-**Negrito**	use ** ou __ antes e depois da palavra
-***Negrito e Itálico***	use *** ou ___ antes e depois da palavra
-~~Riscado~~	use ~~ antes e depois da palavra
-^^Sublinhado^^	use ^^ antes e depois da palavra    
+Use * ou _ antes e depois da palavra
+*Itálico*
+Use ** ou __ antes e depois da palavra	
+**Negrito**
+Use *** ou ___ antes e depois da palavra
+***Negrito e Itálico***
+Use ~~ antes e depois da palavra
+~~Riscado~~
+Use ^^ antes e depois da palavra
+^^Sublinhado^^    
 
-## Para exibir um caracter desses especiais use \ antes do caracter
+> ***Para exibir um desses caracter especiais use \ antes do caracter***
 Eu quero exibir um asterisco literal: \*
 O hash não deve ser um título: \#NãoÉTítulo
 
-## Lista não ordenada	Use *, - ou + seguido de um espaço	
+## Lista não ordenada
+Use *, - ou + seguido de um espaço	
 - Item 1
 - Item 2
 - Item 3
-  - Sub-item   use 2 espaços para identação
+  - Sub-item   Use 2 espaços para identação
 
-## Lista ordenada	Use números seguidos de . e um espaço	
+## Lista ordenada
+Use números seguidos de . e um espaço	
 1. Primeiro item
 2. Segundo item
 3. Terceiro item
-  1. Sub-item   use 2 espaços para identação    
+  1. Sub-item   Use 2 espaços para identação    
 
 
 ## Links
@@ -58,7 +68,7 @@ Similar ao Link, mas adicione um ! antes dos colchetes.
 ![Veja essa imagem](Atividade\code.png)
 
 ## Blocos de Código 
-Use uma crase ` antes e depois para código embutido (inline) e
+Use uma crase ` antes e depois para código embutido (inline)
 Use a função `\print()` no Python para exibir texto no console.
 
 Use três crases (```) antes e depois do código, opcionalmente especificando a linguagem após as primeiras crases	
@@ -68,17 +78,20 @@ function saudacao() {
 }
 ```
 
-## Tabelas	Use | para separar colunas e - para o cabeçalho
-> --- Alinhamento padrão
-> :--- Alinhamento à esquerda
-> :---: Alinhamento central
-> ---: Alinhamento à direita
+## Tabelas
+Use | para separar colunas e - para separar o cabeçalho
+> Alinhamento das colunas deve ser feito na linha do separador de cabeçalho usando : no início e fim da linha com ---
+> --- Padrão
+> :--- À esquerda
+> :---: Central
+> ---: À direita
 | Cabeçalho 1 | Cabeçalho 2 | Cabeçalho 3 |
 |-------------|:-----------:|------------:|
 | Conteúdo 1A | Conteúdo 2A | Conteúdo 3A |
 | Conteúdo 1B | Conteúdo 2B | Conteúdo 3B |
 
-## Lista de Tarefas    Use - [ ] para tarefas pendentes e - [x] para tarefas concluídas
+## Lista de Tarefas
+Use - [ ] para tarefas pendentes e - [x] para tarefas concluídas
 - [x] Tarefa concluída
 - [ ] Tarefa pendente
 - [ ] Outra tarefa
