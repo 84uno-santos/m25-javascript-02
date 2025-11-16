@@ -42,7 +42,7 @@ Use ^^ antes e depois da palavra
 
 > ***Para exibir um desses caracter especiais use \ antes do caracter***   
 Eu quero exibir um asterisco literal: \*   
-O hash não deve ser um título: \#NãoÉTítulo
+O hash não deve ser um título: \#NãoÉTítulo   
 > ***Para quebra de linha termine a linha com 3 espaços antes de pressionar Enter***
 
 ## Lista não ordenada
@@ -82,10 +82,11 @@ function saudacao() {
 ## Tabelas
 Use | para separar colunas e - para separar o cabeçalho   
 > Alinhamento das colunas deve ser feito na linha do separador de cabeçalho usando : no início e fim da linha com ---   
-> --- Padrão
-> :--- À esquerda
-> :---: Central
-> ---: À direita   
+> --- Padrão   
+>> :--- À esquerda   
+>> :---: Central   
+>> ---: À direita   
+___
 | Cabeçalho 1 | Cabeçalho 2 | Cabeçalho 3 |
 |-------------|:-----------:|------------:|
 | Conteúdo 1A | Conteúdo 2A | Conteúdo 3A |
