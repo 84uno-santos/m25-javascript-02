@@ -87,6 +87,7 @@ Use | para separar colunas e - para separar o cabeçalho
 >> :---: Central   
 >> ---: À direita   
 ___
+### Exemplo de Tabela
 | Cabeçalho 1 | Cabeçalho 2 | Cabeçalho 3 |
 |-------------|:-----------:|------------:|
 | Conteúdo 1A | Conteúdo 2A | Conteúdo 3A |
