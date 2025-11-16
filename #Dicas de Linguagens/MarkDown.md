@@ -61,11 +61,11 @@ Use números seguidos de . e um espaço
 
 ## Links
 Use [ colchetes ] para o texto do link e ( parênteses ) para a URL.
-[Visite o Site](https://www.google.com)
+[Visite o Google](https://www.google.com)
 
 ## Imagens
 Similar ao Link, mas adicione um ! antes dos colchetes.
-![Veja essa imagem](Atividade\code.png)
+![Veja essa imagem](https://urbnews.com.br/wp-content/webp-express/webp-images/uploads/2023/08/ceara-x-ituano-empatam-na-arena-castelao-12.jpg.webp)
 
 ## Blocos de Código 
 Use uma crase ` antes e depois para código embutido (inline)
