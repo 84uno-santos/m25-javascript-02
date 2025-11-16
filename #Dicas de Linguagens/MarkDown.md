@@ -91,6 +91,9 @@ ___
 |-------------|:-----------:|------------:|
 | Conteúdo 1A | Conteúdo 2A | Conteúdo 3A |
 | Conteúdo 1B | Conteúdo 2B | Conteúdo 3B |
+| Conteúdo 1C | Conteúdo 2C | Conteúdo 3C |
+| Conteúdo 1D | Conteúdo 2D | Conteúdo 3D |
+| Conteúdo 1E | Conteúdo 2E | Conteúdo 3E |
 
 ## Lista de Tarefas
 Use - [ ] para tarefas pendentes e - [x] para tarefas concluídas
