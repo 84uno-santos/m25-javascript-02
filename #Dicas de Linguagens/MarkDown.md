@@ -40,9 +40,10 @@ Use ~~ antes e depois da palavra
 Use ^^ antes e depois da palavra
 ^^Sublinhado^^       
 
-> ***Para exibir um desses caracter especiais use \ antes do caracter***
+> ***Para exibir um desses caracter especiais use \ antes do caracter***   
 Eu quero exibir um asterisco literal: \*   
 O hash não deve ser um título: \#NãoÉTítulo
+> ***Para quebra de linha termine a linha com 3 espaços antes de pressionar Enter***
 
 ## Lista não ordenada
 Use *, - ou + seguido de um espaço	
