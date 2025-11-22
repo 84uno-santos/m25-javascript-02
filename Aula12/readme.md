@@ -52,9 +52,9 @@ npm start
 11. Instalando react
 Selecione a pasta onde quer criar o projeto e no terminal digite:
 Entre no terminal e digite:
-npx create-react-app nome-do-projeto
+cmd
+> npx create-react-app nome-do-projeto 
+> Essa é a forma antiga de criar um projeto React
 A forma mais nova de atualizar é usando o Vite
 > Dessa forma também instala npx create-vite@latest nome-do-projeto --template react
 npm create vite@latest nome-do-projeto -- --template react
-
-
