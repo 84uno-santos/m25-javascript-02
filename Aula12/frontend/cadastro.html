@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção de Produto</title>
+    <link rel="stylesheet" href="css/estilo-index.css">
+</head>
+<body>
+    <header><h2>Manutenção de Produto</h2></header>    
+    <section>
+        <form action="#" method="POST" name="form_prod">
+            <input type="hidden" name="id" id="id" value="null">
+            <fieldset>
+                <legend>Descrição do Produto</legend>
+                <label for="iddesc">Descrição do Produto:</label>
+                <input type="text" name="descricao" id="iddesc">
+            </fieldset>
+            <fieldset>
+                <legend>Saldo do Produto</legend>
+                <label for="idsaldo">Saldo do Produto:</label>
+                <input type="number" name="saldo" id="idsaldo">
+            </fieldset>
+            <fieldset>
+                <legend>Preço do Produto</legend>
+                <label for="idpreco">Preço do Produto:</label>
+                <input type="number" step="0.01" name="preco" id="idpreco">
+            </fieldset> 
+            <input type="submit" value="Gravar" id="btnSubmit"> &nbsp; &nbsp;
+            <input type="reset" value="Limpar"  id="btnReset">       
+        </form>
+    </section>  
+    <!-- Adicionando uma mensagem como MODAL -->  
+     <div class="modal" id="modal-gravando">
+        <div class="modal-msg">
+            <h3>Registro Gravado com Sucesso! Redirecionando para a página principal...</h3>
+            <!--
+            <span class="close-button">&times;</span>
+            <p id="modal-message"></p>
+            -->
+        </div>
+     </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- Importando a biblioteca axios no CDM -->
+    <script src="js/cadastro.js"></script>
+</body>
+</html>
