@@ -47,3 +47,65 @@ if (condicao) {
 } else {
     // Código se nenhuma for verdadeira
 }
+
+switch (expressao) {
+    case valor1:
+        // Código para valor1
+        break;
+    case valor2:
+        // Código para valor2
+        break;
+    default:
+        // Código padrão
+}
+```
+### Loops
+
+```javascript
+for (let i = 0; i < 10; i++) {
+    // Código repetido 10 vezes
+}
+while (condicao) {
+    // Código repetido enquanto a condição for verdadeira
+}
+do {
+    // Código repetido pelo menos uma vez
+} while (condicao);
+for (let item of array) {
+    // Código para cada item do array
+}
+```
+## 5. Manipulação de Arrays
+| Comando | Descrição | Exemplo |
+| :--- | :--- | :--- |
+| `push()` | Adiciona um elemento ao final do array. | `arr.push(5);` |
+| `pop()` | Remove o último elemento do array. | `arr.pop();` |
+| `shift()` | Remove o primeiro elemento do array. | `arr.shift();` |
+| `unshift()` | Adiciona um elemento no início do array. | `arr.unshift(1);` |
+| `forEach()` | Executa uma função para cada elemento do array. | `arr.forEach(item => console.log(item));` |
+| `map()` | Cria um novo array com os resultados da função aplicada a cada elemento. | `let novos = arr.map(x => x * 2);` |
+| `filter()` | Cria um novo array com elementos que passam no teste da função. | `let pares = arr.filter(x => x % 2 === 0);` |
+## 6. Manipulação de Objetos
+| Comando | Descrição | Exemplo |
+| :--- | :--- | :--- |
+| `{}` | Cria um objeto. | `let pessoa = { nome: "Ana", idade: 25 };` |
+| `obj.propriedade` | Acessa uma propriedade do objeto. | `console.log(pessoa.nome);` |
+| `obj.propriedade = valor` | Define ou altera uma propriedade do objeto. | `pessoa.idade = 26;` |
+| `delete obj.propriedade` | Remove uma propriedade do objeto. | `delete pessoa.idade;` |
+## 7. Eventos e Manipulação do DOM
+| Comando | Descrição | Exemplo |
+| :--- | :--- | :--- |
+| `document.getElementById()` | Seleciona um elemento pelo ID. | `let btn = document.getElementById("meuBotao");` |
+| `document.querySelector()` | Seleciona o primeiro elemento que corresponde ao seletor CSS. | `let div = document.querySelector(".minhaDiv");` |
+| `element.addEventListener()` | Adiciona um ouvinte de evento a um elemento. | `btn.addEventListener("click", minhaFuncao);` |
+| `element.innerHTML` | Define ou obtém o conteúdo HTML de um elemento. | `div.innerHTML = "<p>Novo conteúdo</p>";` |
+| `element.style.propriedade` | Define o estilo CSS de um elemento. | `div.style.color = "red";` |
+## 8. Outras Funções Úteis
+| Comando | Descrição | Exemplo |
+| :--- | :--- | :--- |
+| `setTimeout()` | Executa uma função após um atraso especificado (em ms). | `setTimeout(() => { console.log("Olá!"); }, 2000);` |
+| `setInterval()` | Executa uma função repetidamente em intervalos especificados (em ms). | `setInterval(() => { console.log("Tick"); }, 1000);` |
+| `JSON.parse()` | Converte uma string JSON em um objeto JavaScript. | `let obj = JSON.parse('{"nome":"João"}');` |
+| `JSON.stringify()` | Converte um objeto JavaScript em uma string JSON. | `let str = JSON.stringify({nome: "João"});` |
+---
+Este guia rápido cobre os comandos mais comuns do JavaScript. Para aprofundar seus conhecimentos, consulte a documentação oficial do MDN Web Docs: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript.
