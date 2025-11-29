@@ -43,5 +43,18 @@ npm start
 *08 Nov. 2025*
 9. No arquivo JS quando tem .then ocorre um processo síncrono, ele "roda" em separado, o código continua enquanto em segundo plano ele está executando essa função, para isso é bom incluir um timeout pra dar tempo de rodar o processo solicitado no .then, para rodar assícrono recomenda usar async e .wait nesse caso é esperado o resultado da função pra depois seguir com o código...
 
+*22 Nov. 2025*
+10. Framework
+ 1. React
+ 2. Angular
+ 3. Vite
 
-
+11. Instalando react
+Selecione a pasta onde quer criar o projeto e no terminal digite:
+Entre no terminal e digite:
+cmd
+> npx create-react-app nome-do-projeto 
+> Essa é a forma antiga de criar um projeto React
+A forma mais nova de atualizar é usando o Vite
+> Dessa forma também instala npx create-vite@latest nome-do-projeto --template react
+npm create vite@latest nome-do-projeto -- --template react
