@@ -58,3 +58,14 @@ cmd
 A forma mais nova de atualizar é usando o Vite
 > Dessa forma também instala npx create-vite@latest nome-do-projeto --template react
 npm create vite@latest nome-do-projeto -- --template react
+
+*29 Nov. 2025*
+Para Rodar clicar na pasta projeto-senai, click direito rodar no terminal integrado e executar os comandos no terminal [vite]
+**instalando dependências**
+npm install
+**rodando o vite**
+npm run dev
+**instalando rotas**
+npm install react-router-dom
+**publicando**
+npm run build

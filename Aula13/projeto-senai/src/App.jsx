@@ -1,11 +1,34 @@
 import './App.css'
+import Header from './componentes/Header';
+import Footer from './componentes/Footer';
+import Sidebar from './componentes/Sidebar';
+import { useState } from 'react';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Dashboard from './componentes/Dashboard';
+import Relatorios from './componentes/Relatorios';
+import Perfil from './componentes/Perfil';
 
 function App() {
+  const [isSideBarOpen, setIsSidebarOpen] = useState(false);
+  const closeSidebar = () => setIsSidebarOpen(false);
   return (
-    <>
-    <p>Projeto Senai - Aula 12</p>     
-    <div className="fundo"> </div>
-    </> 
+    <div className='contentor'>
+     <BrowserRouter>     
+      <Header onToggleMenu={() => setIsSidebarOpen(v => !v)} />
+      <div className='fundo'> 
+        <Sidebar isOpen={isSideBarOpen} 
+        closeSidebar={closeSidebar} />
+        <main className='page-body'> 
+          <Routes>
+            <Route path='/' element={<Dashboard />} />           
+            <Route path='/relatorios' element={<Relatorios />} />           
+            <Route path='/perfil' element={<Perfil />} />           
+          </Routes>
+        </main>
+      </div>
+      <Footer />
+     </BrowserRouter> 
+    </div>
   )
 }
 
