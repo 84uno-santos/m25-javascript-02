@@ -69,3 +69,4 @@ npm run dev
 npm install react-router-dom
 **publicando**
 npm run build
+> Será gerada uma pasta dist, contendo a pasta assets, index.html e um arquivo svg em tese esses arquivos são os que você deverá publicar.
