@@ -1,0 +1,13 @@
+:root {
+  /* definição de variáveis CSS */
+  --cor-fundo-header: #3f51b5; 
+  --cor-fonte-header: #ffffff;
+  --cor-fundo-body: #ffffff;
+  --cor-fonte-body: #000000;
+  --fonte: Roboto,"Helvetica Neue", sans-serif;
+}
+* {
+  /* resetando margens e paddings */
+  margin: 0;
+  padding: 0;
+}  
