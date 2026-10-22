@@ -6,7 +6,7 @@ Use > antes do texto da citação podendo usar >> para níveis adicionais
 > Primeiro parágrafo da citação.
 >
 > Segundo parágrafo da citação.
-> Este é um texto que ainda faz parte do segundo parágrafo.
+> Este é um texto que ainda faz parte do primeiro parágrafo.
 
 > Citação de primeiro nível.
 >> Citação de segundo nível.
